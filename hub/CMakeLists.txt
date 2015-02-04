@@ -27,7 +27,7 @@ module_def(scsound https://github.com/omega-hub/scsound.git
 module_def(s2plot https://github.com/ajhub1/s2plot.git
   "The s2plot Library for Omegalib")
 
-module_def(ovolume https://ntoand@bitbucket.org/ntoand/ovolume.git
+module_def(ovolume git@bitbucket.org:ntoand/ovolume.git
   "Volume rendering for Omegalib using OSGVolume")
 
 #--------------------------------------------------------------------------------
