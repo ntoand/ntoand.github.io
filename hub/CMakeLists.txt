@@ -6,7 +6,7 @@ function(process_omegalib_modules)
 module_def(omegaOsg https://github.com/omega-hub/omegaOsg.git
   "An OpenSceneGraph and Bullet Physics integration library for omegalib")
 
-module_def(omegaOsgEarth https://github.com/omega-hub/omegaOsgEarth.git
+module_def(omegaOsgEarth https://github.com/ntoand/omegaOsgEarth.git
   "An OpenSceneGraph module for terrain rendering")
 
 module_def(omegaVtk https://github.com/omega-hub/omegaVtk.git
