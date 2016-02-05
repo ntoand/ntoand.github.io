@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html>
-  
+
   <head>
     <title>Toan Nguyen info</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
     <!-- style-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.13.0/vis.min.css">
     <link rel="stylesheet" href="../css/info.css">
 
     <!-- library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.13.0/vis.min.js"></script>
 
     <script type="text/javascript">
-    
-    $(document).ready(function(){
 
-      $.ajax({
-        url: "../data/timeline.json",
-        dataType: "json",
-        method: "GET",
-        context: this,
-        success: function(data) {
-          console.log(data);
-          var container = document.getElementById('timeline');
-          var options = {};
-          var timeline = new vis.Timeline(container, data.items, options);
-        },
-      });
+    $(document).ready(function(){
 
     });
 
     </script>
 
   </head>
-  
+
   <body>
 
-    <div class="container" id="timeline_container">
-      <h1>Timeline</h1>
-      <h3>Toan Nguyen</h3>
-      <div id="timeline"></div>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Info</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Timeline</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Timeline</h1>
+        <p>No need to remember everything :-)</p>
+      </div>
     </div>
+
+    <div class="container">
+      <h2>Important events</h2>
+      <div>
+        <iframe src='//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1F_72huDL_0COXNRFpL63gH1k6popWX3vNjuQvKdoynk&font=Default&timenav_position=top&lang=en&start_at_end=true&initial_zoom=1&height=650' width='100%' height='650' frameborder='0'></iframe>
+      </div>
+    </div>
+
+    <footer class="container-fluid bg-4 text-center">
+      <p>Copyright 2016, Toan Nguyen</p>
+    </footer>
 
   </body>
 
