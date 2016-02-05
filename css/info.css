@@ -1,0 +1,14 @@
+.vis-item.toan {
+  	color: black; 
+  	background-color: white;
+}
+
+.vis-item.ngocanh {
+  	color: red; 
+  	background-color: pink;
+}
+
+.vis-item.both {
+	color: green;
+	background-color: lightgray;
+}

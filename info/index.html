@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Toan Nguyen info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- style-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.13.0/vis.min.css">
+    <link rel="stylesheet" href="../css/info.css">
+
+    <!-- library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.13.0/vis.min.js"></script>
+
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+
+      $.ajax({
+        url: "../data/timeline.json",
+        dataType: "json",
+        method: "GET",
+        context: this,
+        success: function(data) {
+          console.log(data);
+          var container = document.getElementById('timeline');
+          var options = {};
+          var timeline = new vis.Timeline(container, data.items, options);
+        },
+      });
+
+    });
+
+    </script>
+
+  </head>
+  
+  <body>
+
+    <div class="container" id="timeline_container">
+      <h1>Timeline</h1>
+      <h3>Toan Nguyen</h3>
+      <div id="timeline"></div>
+    </div>
+
+  </body>
+
+</html>
